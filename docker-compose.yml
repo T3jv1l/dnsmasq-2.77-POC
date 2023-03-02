@@ -1,0 +1,17 @@
+version: '3'
+
+services: 
+  blindsight:
+    build: ./ 
+    ports:
+      - "547:547/udp"
+    #cap_add:
+    # - SYS_PTRACE
+    #security_opt:
+    # - apparmor:unconfined
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+          max-file: "10"
+          max-size: "1G"
