@@ -57,4 +57,4 @@ RUN pip3 install pwntools
 RUN make
 
 ENTRYPOINT /home/ctf/src/dnsmasq --no-daemon --dhcp-range=fd00::2,fd00::ff
-# ENTRYPOINT /bin/bash
+# ENTRYPOINT /bin/bashc
