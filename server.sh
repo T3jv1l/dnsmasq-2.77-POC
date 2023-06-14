@@ -27,4 +27,4 @@ EOF
 
 sudo systemctl daemon-reload
 sudo systemctl restart systemd-resolved.service
-sudo gdb /home/hack/Desktop/dnsmasq-2.77test1/src/dnsmasq
+sudo gdb --silent /home/hack/Desktop/dnsmasq-2.77test1/src/dnsmasq
